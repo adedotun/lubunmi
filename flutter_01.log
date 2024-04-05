@@ -1,0 +1,95 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color packages get
+
+## exception
+
+ArgumentError: Invalid argument(s): Cannot find executable for /Users/mac/flutter/bin/cache/dart-sdk/bin/pub.
+
+```
+#0      _getExecutable (package:process/src/interface/local_process_manager.dart:127:5)
+#1      LocalProcessManager.start (package:process/src/interface/local_process_manager.dart:43:30)
+#2      runCommand (package:flutter_tools/src/base/process.dart:117:25)
+#3      runCommandAndStreamOutput (package:flutter_tools/src/base/process.dart:142:33)
+<asynchronous suspension>
+#4      pub (package:flutter_tools/src/dart/pub.dart:159:18)
+<asynchronous suspension>
+#5      pubGet (package:flutter_tools/src/dart/pub.dart:106:13)
+<asynchronous suspension>
+#6      PackagesGetCommand._runPubGet (package:flutter_tools/src/commands/packages.dart:96:13)
+<asynchronous suspension>
+#7      PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:127:11)
+<asynchronous suspension>
+#8      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:490:18)
+#9      _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#10     _rootRunUnary (dart:async/zone.dart:1132:38)
+#11     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#12     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#13     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#14     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#15     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#16     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:30:15)
+#17     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:288:13)
+#18     PackagesGetCommand.usageValues (package:flutter_tools/src/commands/packages.dart)
+#19     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#20     _rootRunUnary (dart:async/zone.dart:1132:38)
+#21     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#22     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#23     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#24     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#25     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#26     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:552:7)
+#27     _rootRun (dart:async/zone.dart:1124:13)
+#28     _CustomZone.run (dart:async/zone.dart:1021:19)
+#29     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#30     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#31     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#32     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#33     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:116:13)
+#34     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:173:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.9.1+hotfix.6, on Mac OS X 10.14.6 18G1012, locale en-NG)
+    • Flutter version 1.9.1+hotfix.6 at /Users/mac/flutter
+    • Framework revision 68587a0916 (2 months ago), 2019-09-13 19:46:58 -0700
+    • Engine revision b863200c37
+    • Dart version 2.5.0
+
+[!] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
+    • Android SDK at /Users/mac/Library/Android/sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.2
+    • ANDROID_HOME = /Users/mac/Library/Android/sdk
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b49-5587405)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[!] Xcode - develop for iOS and macOS
+    ✗ Xcode installation is incomplete; a full installation is necessary for iOS development.
+      Download at: https://developer.apple.com/xcode/download/
+      Or install Xcode via the App Store.
+      Once installed, run:
+        sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+    • CocoaPods version 1.8.4
+
+[✓] Android Studio (version 3.5)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin version 40.2.2
+    • Dart plugin version 191.8593
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b49-5587405)
+
+[!] VS Code (version 1.39.2)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    ✗ Flutter extension not installed; install from
+      https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[!] Connected device
+    ! No devices available
+
+! Doctor found issues in 4 categories.
+```

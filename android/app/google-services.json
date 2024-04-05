@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "379442580806",
+    "firebase_url": "https://lubumi-213201.firebaseio.com",
+    "project_id": "lubumi-213201",
+    "storage_bucket": "lubumi-213201.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379442580806:android:707f7f75a37d559d4a2947",
+        "android_client_info": {
+          "package_name": "com.lubumi.sellers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379442580806-2n0f7uc0rvdsuche9qi7q3drdhb58n8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lubumi.sellers",
+            "certificate_hash": "7eb9fe48fc5301c8458dfcde48952ea6cd51bad2"
+          }
+        },
+        {
+          "client_id": "379442580806-476fgj4po6a9n9ul2eg8mtcpjjulrvtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxjsrLxWswMeH76Z_xqtCQZ-O4S4ZYU54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379442580806-o8f9rk38r82n27cvc66e37lilp3s5ufc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "379442580806-r81bijte594lm8nkm58l3ob9bt921bo3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lubumi.sellers"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
